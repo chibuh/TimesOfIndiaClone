@@ -1,126 +1,9 @@
-body{
+body {
     margin: 0;
 }
 
-.top {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color:white;
-    position: sticky;
-    top: 0;
-    width: 100%;
-}
+/* Anchoring */
 
-.top1 {
-    color: rgb(99, 99, 99);
-    padding: 4px;
-    display: inline-block;
-}
-
-span{
-    padding: 4px;
-    font-size: 10px;
-    font-family: Montserrat,Verdana,arial,sans-serif;
-    
-}
-
-
-.fa:hover {
-    opacity: 0.7;
-}
-.fa {
-    padding-top: 8px;
-    font-size: 0px;
-    width: 25px;
-    height: 15px;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 50%;
-    border: solid black 1px
-}
-
-
-.mainhead{
-    font-family: "Times New Roman", Times, serif;
-    text-align: center;
-    font-size: 2.8em;
-    border: solid rgb(214, 209, 209) 1px;
-    border-left: 0px;
-    border-right: 0px;
-    padding: 18px;
-    letter-spacing: -3px;
-    margin: 0;
-}
-
-/* NAVIGATION BAR */
-.navbar {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color:white;
-    position: sticky;
-    top: 0;
-    width: 100%;
-    border-bottom: solid black 2px;
-    z-index: 9999;
-  }
-  
- .navbar li {
-    display: inline-block;
-    float: left;
-    padding: 6px;
-    padding-left: 8px;
-    padding-right: 8px;
-    text-align: center;
-    font-size: 12px;
-    font-family: Montserrat, Verdana, arial, sans-serif;
-    font-stretch: expanded;
-  }
-  
-  /* li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  } 
-  */
-
-/* Classes */
-
-/* .navbar{
-    display: inline-block;
-    width: auto;
-    list-style-type: none;
-}
-
-li{
-    display: inline-block;
-} */
-
-.TOIlogo {
-    height: 20px;
-    border-radius: 15%;
-    margin-left: 160px;
-}
-.TOIplus {
-    height: 15px;
-    margin: 0;
-    margin-left: 70px;
-}
-.searchlogo {
-    height: 15px;
-}
-
-.inflag {
-    height: 10px;
-}
-
-
-/* 3 */
 a:link {
     color: rgb(0, 0, 0);
     background-color: transparent;
@@ -138,27 +21,134 @@ a:hover {
     text-decoration: none;
   }
 
-.t3 {
+
+/* HEADER */
+
+.headerTOI{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.headerTOI p{
+    font-size: 10px;
+    font-family: Montserrat,Verdana,arial,sans-serif; 
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 4px;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.top1 {
+    color: rgb(99, 99, 99);
+    padding: 4px;
+    padding-top: 0;
+    padding-bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.top1 div:nth-child(5) {
+  margin-left: auto;
+}
+
+.TOIlogo {
+    height: 20px;
+    border-radius: 15%;
+}
+.TOIplus {
+    height: 15px;
+    margin: 0;
+}
+.searchlogo {
+    height: 15px;
+}
+
+.inflag {
+    height: 10px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+.fa {
+    padding-top: 8px;
+    font-size: 0px;
+    width: 25px;
+    height: 15px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    border: solid black 1px;
+    color: rgb(89, 89, 89);
+}
+
+/* TIMES OF INDIA */
+
+.mainhead{
+    width: 80%;
+    font-family: "Times New Roman", Times, serif;
+    text-align: center;
+    font-size: 2.8em;
+    padding: 18px;
+    letter-spacing: -3px;
+    margin: 0 auto;
+    color: rgb(26, 26, 26);
+}
+
+/* NAV BAR  */
+
+.navbar {
+    list-style-type: none;
+    overflow: hidden;
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.navbar li:nth-child(18) {
+  margin-left: auto;
+}
+
+  
+ .navbar li {
+    padding: 6px;
+    padding-left: 8px;
+    padding-right: 8px;
+    text-align: center;
+    font-size: 12px;
+    font-family: Montserrat, Verdana, arial, sans-serif;
+    font-stretch: expanded;
+    cursor: pointer;
+  }
+
+
+  /* IN THE NEWS */
+  .t3 {
     font-family: Montserrat, Verdana, arial, sans-serif;
     color: rgb(0, 0, 0);
     font-size: 10px;
     font-stretch: expanded;
     letter-spacing: -0.2px;
-    padding-right: 640px;
-    margin-left: 160px;
-    margin-bottom: 10px;
-    border-bottom: solid rgb(214, 209, 209) 1px;
 }
+
+
+
+/********************************************** MAIN NEWS ***********************************************/
+
 
 /* 4-Left Division News */
 
 .leftdiv {
-    display: inline-block;
+    /* display: inline-block; */
     margin-top: 30px;
-    margin-left: 150px; 
+    /* margin-left: 150px; */
     border-right: dotted rgba(46, 45, 45, 0.63) 1px;
     padding-right: 10px; 
-    float: left;
+    /* float: left; */
 }
 
 
@@ -271,11 +261,12 @@ a:hover {
 }
 
 
+
 /* Trending News */
 
 .tnews {
     clear: both;
-    width: 1200px;
+    width: 80%;
     margin: 0 auto;
     margin-top: 10px;
 }
@@ -283,34 +274,23 @@ a:hover {
     padding:15px; padding-top: 0px; padding-bottom: 0px; background: rgb(246, 246, 246); border-radius: 20px; font-size: 12px; font-family: Montserrat,Verdana,arial,sans-serif; text-align: center;
 }
 
-/* footer*/
+/* FOOTER */
 
-.footleft{
-    display: inline-block;
-    float: left;
-    width: 400px;
-}
+
 
 .footleft {
     cursor: pointer;
-    width: 350px;
+    width: 30%;
 }
 footer td {
     cursor: pointer;
-    width: 200px;
-}
-
-footer table {
-    width: 400px;
+    width: 35%;
 }
 
 .footmid {
-    display: inline-block;
-    float: left;
-    margin-left: 75px;
+    width: 30%;
 }
 
 .footright {
-    display: inline-block;
-    float: right;
+    width: 30%;
 }
